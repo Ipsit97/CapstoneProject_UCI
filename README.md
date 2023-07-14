@@ -7,17 +7,6 @@ Discover the power of our full-stack application. The back-end handles data proc
 
 SES What is a full-stack application consisting of a front-end, back-end, and a UI dashboard for data visualization.
 
-## Front-end (React.js)
-The front-end folder contains the React.js application responsible for the user interface. To run the front-end:
-
-1. Navigate to the `front-end` folder: `cd front-end`
-2. Install dependencies: 
-```
-npm install
-```
-3. Start the development server: `npm start`
-4. Access the front-end application at: `http://localhost:3000`
-
 ## Back-end (Flask)
 The back-end folder contains the Flask application responsible for data processing and APIs. To run the back-end:
 
@@ -37,3 +26,14 @@ The back-end code performs various tasks, including file upload and processing, 
 Make sure to set the appropriate configurations in the `app.config` section of `app.py`, including the `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`, and other necessary settings.
 
 Make sure all two applications (front-end, back-end) are running simultaneously for the full functionality of the SES What application.
+
+## Front-end (React.js)
+The front-end folder contains the React.js application responsible for the user interface. To run the front-end:
+
+1. Navigate to the `front-end` folder: `cd front-end`
+2. Install dependencies: 
+```
+npm install
+```
+3. Start the development server: `npm start`
+4. Access the front-end application at: `http://localhost:3000`
