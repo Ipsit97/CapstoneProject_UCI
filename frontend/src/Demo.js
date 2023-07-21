@@ -64,7 +64,7 @@ const FileUploadForm = () => {
     // formData.append('swfile', file2);
     if (data) {
       try {
-        const response = await axios.post('http://localhost:8000/process', formData, {
+        const response = await axios.post('http://backend-image:5000/process', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
