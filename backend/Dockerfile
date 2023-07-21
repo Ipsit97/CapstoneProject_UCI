@@ -15,9 +15,6 @@ COPY ./ /backend
 # Install dependencies
 RUN pip3 install -r /backend/requirements.txt
 
-# Install gevent
-RUN pip3 install gevent
-
 # Download the Spacy model
 RUN python3 -m spacy download en_core_web_sm
 
@@ -25,4 +22,4 @@ RUN python3 -m spacy download en_core_web_sm
 EXPOSE 8000
 
 # Start the Flask server using gevent WSGIServer
-CMD ["python3", "/backend/run.py"]
+CMD ["python3", "/backend/app.py"]
