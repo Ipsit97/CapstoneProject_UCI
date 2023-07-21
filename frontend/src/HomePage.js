@@ -25,18 +25,18 @@ const HomePage = () => {
         <div className="team-members">
           <div className="team-member">
             <img src="team-member1.jpg" alt="Team Member 1" />
-            <h3 className="team-member-name">John Doe</h3>
-            <p className="team-member-role">Co-founder & CEO</p>
+            <h3 className="team-member-name">Hirdyanshu Goyal</h3>
+            <p className="team-member-role">Co-founder</p>
           </div>
           <div className="team-member">
             <img src="team-member2.jpg" alt="Team Member 2" />
-            <h3 className="team-member-name">Jane Smith</h3>
-            <p className="team-member-role">Co-founder & CTO</p>
+            <h3 className="team-member-name">Ipsit Gambir</h3>
+            <p className="team-member-role">Co-founder</p>
           </div>
           <div className="team-member">
             <img src="team-member3.jpg" alt="Team Member 3" />
-            <h3 className="team-member-name">Alex Johnson</h3>
-            <p className="team-member-role">Lead Developer</p>
+            <h3 className="team-member-name">Ashutosh Kumar</h3>
+            <p className="team-member-role">Co-founder</p>
           </div>
         </div>
       </section>
