@@ -18,3 +18,5 @@ contractions==0.1.73
 transformers==4.29.2
 torch
 redis==4.5.5
+flask_cors
+gevent
