@@ -10,7 +10,7 @@ RUN apt-get update && \
 WORKDIR /backend
 
 # Copy all files from the local "Backend" directory to the working directory in the container
-COPY backend /backend
+COPY ./ /backend
 
 # Install dependencies
 RUN pip3 install -r /backend/requirements.txt
