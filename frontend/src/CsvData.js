@@ -20,14 +20,14 @@ const CsvData = () => {
         const file2_id = JSON.parse(fileId).file2_id;
         if (input === "comments") {
             try {
-                const response = await axios.get(`http://localhost:5000/result/${file_id}`);
+                const response = await axios.get(`http://128.195.13.106:8000/result/${file_id}`);
                 setIsUploadView(response.data.csv_data)
             } catch (error) {
                 alert("Your file is deleted, Please Upload again!");
             }
         } else if (input === "stopwords") {
             try {
-                const response = await axios.get(`http://localhost:5000/result/${file2_id}`);
+                const response = await axios.get(`http://128.195.13.106:8000/result/${file2_id}`);
                 setIsUploadView(response.data.csv_data)
             } catch (error) {
                 alert("Your file is deleted, Please Upload again!")
@@ -42,7 +42,7 @@ const CsvData = () => {
         formData.append('email', csvData.email)
         formData.append('file_id', csvData.file_id)
         formData.append('file2_id', csvData.file2_id)
-        const response = await axios.post('http://localhost:5000/remove-file', formData, {
+        const response = await axios.post('http://128.195.13.106:8000/remove-file', formData, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -57,7 +57,7 @@ const CsvData = () => {
         formData.append('email', emailData.email)
         formData.append('file_id', emailData.file_id)
         formData.append('file2_id', emailData.file2_id)
-        const response = await axios.post('http://localhost:5000/send_mail', formData, {
+        const response = await axios.post('http://128.195.13.106:8000/send_mail', formData, {
             headers: {
                 'Content-Type': 'application/json'
             }

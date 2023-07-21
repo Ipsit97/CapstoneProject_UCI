@@ -80,7 +80,7 @@ function UIDashboard() {
       try {
         // Fetch the data from the backend using Axios
         const response = await axios.get(
-          `http://localhost:5000/get_file_path`
+          `http://128.195.13.106:8000/get_file_path`
         );
         // loadCSVData(response.data.file_path);
         const jsonData = response.data.data;
