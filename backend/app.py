@@ -276,6 +276,9 @@ def get_file_path():
     data = dataFrame1.to_json(orient='records')
     return jsonify({'data': data})    
 
+@app.route('/test', methods=['GET'])
+def test_connection():
+    return 'Connection to the backend is successful!'
 
 @app.route('/perform_model_task', methods=['POST'])
 def perform_task():
@@ -304,5 +307,4 @@ def perform_task():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    app.config["TEMPLATES_AUTO_RELOAD"] = True
+    app.run(host='0.0.0.0', port=5000)

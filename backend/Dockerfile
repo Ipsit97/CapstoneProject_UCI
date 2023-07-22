@@ -19,7 +19,7 @@ RUN pip3 install -r /backend/requirements.txt
 RUN python3 -m spacy download en_core_web_sm
 
 # Expose the Flask server port
-EXPOSE 8000
+EXPOSE 5000
 
 # Start the Flask server using gevent WSGIServer
 CMD ["python3", "/backend/app.py"]
